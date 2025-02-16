@@ -1,0 +1,123 @@
+.about {
+    background: #f5f5f5;
+    padding: 40px;
+}
+.about__header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.hero {
+    position: relative;
+    background: url("../images/backgrounds/hero-bg.jpg") no-repeat center center/cover;
+    height: 599px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    font-size: 26px;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 250px; /* Размер изображения */
+    height: auto;
+    z-index: 2;
+    pointer-events: none; /* Чтобы не мешало кликам */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    margin-left: 60px;
+}
+
+.hero-content_logo {
+}
+.hero-content-text {
+    align-items: left;
+}
+.hero-content-text_title {
+    margin-top: 116px;
+    margin-bottom: 15px;
+    font-size: 75px;
+}
+.experience {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.experience-container {
+    /*  position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.experience-container-video {
+    position: relative; /* Теперь фон и видео позиционируются относительно него */
+    width: 545px;
+    height: 365px;
+    margin-top: 0;
+}
+
+.experience-bg {
+    position: absolute;
+    width: 545px;
+    height: 367px;
+    background: #f7eee5;
+    top: 100px; /* Смещаем вверх */
+    left: 25px; /* Смещаем левее */
+    z-index: -1; /* Фон под видео */
+}
+
+.experience-video {
+    position: absolute;
+    width: 545px;
+    height: 365px;
+    z-index: 2; /* Видео выше фона */
+    left: 60px; /* Смещаем немного вправо, чтобы оно выходило за фон */
+    top: 137px; /* Немного ниже, чтобы не прилипало к верху */
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.about-text {
+    max-width: 500px;
+    z-index: 3;
+    color: #6c5f4a;
+    font-size: 18px;
+    margin-right: 57px;
+    width: 545px;
+    margin-top: 100px;
+    line-height: 30px;
+    width: 400;
+}
+
+.about-text__title {
+    margin: 0;
+    font-size: 54px;
+    color: #8a7b60;
+}
+
+.about-text__subtitle {
+    margin: 20px 0px 32px 0px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #0a3b93;
+}
+
+.about-text__paragraph {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}

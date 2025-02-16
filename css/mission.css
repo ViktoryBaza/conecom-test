@@ -1,0 +1,44 @@
+.mission {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.mission-header {
+    background-color: #1d3f8f;
+    color: #ffffff;
+    padding: 30px;
+    position: relative;
+}
+
+.mission-header blockquote {
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+    position: relative;
+}
+
+.mission-header::after {
+    content: "";
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='10' cy='10' r='5' fill='%23ffffff'/%3E%3Ccircle cx='30' cy='20' r='5' fill='%23ffffff'/%3E%3Ccircle cx='50' cy='30' r='5' fill='%23ffffff'/%3E%3Ccircle cx='70' cy='40' r='5' fill='%23ffffff'/%3E%3Ccircle cx='90' cy='50' r='5' fill='%23ffffff'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.mission-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #1d3f8f;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.mission-button:hover {
+    background-color: #f0f0f0;
+}

@@ -4,148 +4,210 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About & Mission</title>
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Hero Section -->
-    <header class="hero">
-      <img
-        src="./images/png/white-patches.png"
-        alt="Overlay"
-        class="hero-overlay"
-      />
-      <div class="hero-content">
+    <div class="wrapper">
+      <header class="hero">
         <img
-          src="/images/jpeg/logoipsum.jpg"
-          alt="Logo Ipsum"
-          class="hero-content_logo"
+          src="./images/png/white-patches.png"
+          alt="Overlay"
+          class="hero-overlay"
         />
-        <div class="hero-content-text">
-          <h1 class="hero-content-text_title">CONECOM</h1>
-          <p class="hero-content-text_description">
-            российское подразделение французской группы DuffBeer
+        <div class="hero-content">
+          <img
+            src="./images/jpeg/logoipsum.jpg"
+            alt="Logo Ipsum"
+            class="hero-content_logo"
+          />
+            <h1 class="hero-content-text_title">CONECOM</h1>
+            <p class="hero-content-text_description">
+              российское подразделение французской группы DuffBeer
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="experience">
+        <div class="experience-container">
+          <div class="experience-container-video">
+            <div class="experience-bg"></div>
+            <iframe
+              src="https://www.youtube.com/embed/I8En-UwFWgg"
+              allowfullscreen
+              class="experience-video"
+            ></iframe>
+          </div>
+          <div class="about-text">
+            <h1 class="about-text__title">167</h1>
+            <h2 class="about-text__subtitle">ЛЕТ НАШЕГО ОПЫТА</h2>
+            <p class="about-text__paragraph1">
+              DuffBeer — один из мировых лидеров по производству дрожжей и
+              других продуктов ферментации. И нам нужна сильная команда
+              профессионалов и единомышленников, которые будут стремиться
+              развиваться вместе с DuffBeer. <br /><br />
+              Мы всегда рады принять талантливых и целеустремленных людей в нашу
+              дружную команду! Мы ценим каждого своего сотрудника и стремимся
+              предоставить всем равные возможности в развитии и совершенств.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="production">
+        <div class="production-content">
+          <img
+            src="./images/icons/arrows.svg"
+            alt="arrows"
+            class="production_arrows"
+          />
+          <p class="production-content_text">
+            «Каждое 3-е хлебобулочное изделие в мире произведено с
+            использованием продукции DuffBeer»
           </p>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <!-- Experience Section -->
-    <section class="experience">
-      <div class="experience-container">
-        <div class="experience-container-video">
-          <div class="experience-bg"></div>
-          <iframe
-            width="545"
-            height="365"
-            src="https://www.youtube.com/embed/I8En-UwFWgg"
-            frameborder="0"
-            allowfullscreen
-            class="experience-video"
-          ></iframe>
+      <section class="mission">
+        <div class="mission-content">
+          <h2>— МИССИЯ DUFFBEER —</h2>
+          <p>РАБОТАТЬ ВМЕСТЕ, ЧТОБЫ ЛУЧШЕ НАКОРМИТЬ И СОХРАНИТЬ ПЛАНЕТУ</p>
+          <a
+            href="https://www.google.ru/"
+            class="mission-button"
+            target="_blank"
+            >Перейти на сайт</a
+          >
         </div>
-        <div class="about-text">
-          <h1 class="about-text__title">167</h1>
-          <h2 class="about-text__subtitle">ЛЕТ НАШЕГО ОПЫТА</h2>
-          <p class="about-text__paragraph1">
-            DuffBeer — один из мировых лидеров по производству дрожжей и других
-            продуктов ферментации. И нам нужна сильная команда профессионалов и
-            единомышленников, которые будут стремиться развиваться вместе с
-            DuffBeer. <br /><br />
-            Мы всегда рады принять талантливых и целеустремленных людей в нашу
-            дружную команду! Мы ценим каждого своего сотрудника и стремимся
-            предоставить всем равные возможности в развитии и совершенств.
+      </section>
+
+      <section class="advantages">
+        <h2>Наши преимущества</h2>
+        <div id="advantages-grid" class="advantages-container"></div>
+
+        <div id="advantages-slider" class="swiper-container">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+          <div>
+            <img
+              src="images/icons/arrow-right.svg"
+              alt="Next"
+              class="swiper-button-next"
+            />
+          </div>
+          <div>
+            <img
+              src="images/icons/arrow-left.svg"
+              alt="Previous"
+              class="swiper-button-prev"
+            />
+          </div>
+        </div>
+      </section>
+
+      <script src="js/advantages.js"></script>
+
+      <section class="company-stats">
+        <div class="company-intro">
+          <h2 class="company-title">DUFFBEER</h2>
+          <p class="company-subtitle">
+            Ключевой мировой игрок в области ферментации
           </p>
         </div>
-      </div>
-    </section>
+        <div class="stats-grid" id="stats-grid">
+          <div class="stats-item stats-image">
+            <img src="./images/jpeg/01-employees-office.jpg" alt="Сотрудники" />
+            <div class="stats-text brown-bg">10 700+ сотрудников</div>
+          </div>
 
-    <section class="production">
-      <div class="production-content">
+          <div class="stats-item stats-image">
+            <img src="./images/jpeg/02-expert-lab.jpg" alt="Исследования" />
+            <div class="stats-text blue-bg">570 экспертов R&D</div>
+          </div>
+
+          <div class="stats-item stats-highlight">
+            <div class="highlight-number">167</div>
+            <p>лет опыта <br />на рынке хлебопечения</p>
+          </div>
+
+          <div class="stats-item stats-image">
+            <img src="./images/jpeg/03-company-history.jpg" alt="Россия" />
+            <div class="stats-text brown-bg">25+ лет в России</div>
+          </div>
+
+          <div class="stats-item stats-image">
+            <img src="./images/jpeg/04-branches-worldwide.jpg" alt="Фабрика" />
+            <div class="stats-text brown-bg">Филиалы в 50+ странах</div>
+          </div>
+
+          <div class="stats-item stats-highlight">
+            <div class="highlight-number">4</div>
+            <p>направления <br />деятельности</p>
+          </div>
+        </div>
+        <div class="stats-slider" id="stats-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide stats-item stats-image">
+              <img
+                src="./images/jpeg/01-employees-office.jpg"
+                alt="Сотрудники"
+              />
+              <div class="stats-text brown-bg">10 700+ сотрудников</div>
+            </div>
+
+            <div class="swiper-slide stats-item stats-image">
+              <img src="./images/jpeg/02-expert-lab.jpg" alt="Исследования" />
+              <div class="stats-text blue-bg">570 экспертов R&D</div>
+            </div>
+
+            <div class="swiper-slide stats-item stats-highlight">
+              <div class="highlight-number">167</div>
+              <p>лет опыта <br />на рынке хлебопечения</p>
+            </div>
+
+            <div class="swiper-slide stats-item stats-image">
+              <img src="./images/jpeg/03-company-history.jpg" alt="Россия" />
+              <div class="stats-text brown-bg">25+ лет в России</div>
+            </div>
+
+            <div class="swiper-slide stats-item stats-image">
+              <img
+                src="./images/jpeg/04-branches-worldwide.jpg"
+                alt="Фабрика"
+              />
+              <div class="stats-text brown-bg">Филиалы в 50+ странах</div>
+            </div>
+
+            <div class="swiper-slide stats-item stats-highlight">
+              <div class="highlight-number">4</div>
+              <p>направления <br />деятельности</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div>
+            <img
+              src="images/icons/arrow-right.svg"
+              alt="Next"
+              class="swiper-button-next"
+            />
+          </div>
+          <div>
+            <img
+              src="images/icons/arrow-left.svg"
+              alt="Previous"
+              class="swiper-button-prev"
+            />
+          </div>
+        </div>
         <img
-          src="./images/icons/arrows.svg"
-          alt="arrows"
-          class="production_arrows"
+          src="./images/png/white-patches-company.png"
+          alt="Overlay"
+          class="white-patches-company"
         />
-        <p class="production-content_text">
-          «Каждое 3-е хлебобулочное изделие в мире произведено с использованием
-          продукции DuffBeer»
-        </p>
-        <img
-          src="./images/png/blue-patches.png"
-          alt="blue-patches"
-          class="production_bluePatches"
-        />
-      </div>
-    </section>
-    <!-- Mission Section -->
-    <section class="mission">
-      <div class="mission-content">
-        <h2>— МИССИЯ DUFFBEER —</h2>
-        <p>РАБОТАТЬ ВМЕСТЕ, ЧТОБЫ ЛУЧШЕ НАКОРМИТЬ И СОХРАНИТЬ ПЛАНЕТУ</p>
-        <a href="https://www.google.ru/" class="mission-button" target="_blank"
-          >Перейти на сайт</a
-        >
-      </div>
-    </section>
-    <!-- advantages Section -->
-    <section class="advantages">
-      <h2>Наши преимущества</h2>
-      <div class="advantages-container" id="advantages-container"></div>
-    </section>
-    <script src="/js/advantages.js"></script>
-
-    <!-- company-stats Section -->
-
-    <section class="company-stats">
-      <div class="company-intro">
-        <h2 class="company-title">DUFFBEER</h2>
-        <p class="company-subtitle">
-          Ключевой мировой игрок в области ферментации
-        </p>
-      </div>
-
-      <div class="stats-grid">
-        <div class="stats-item stats-image">
-          <img src="/images/jpeg/01-employees-office.jpg" alt="Сотрудники" />
-          <div class="stats-text brown-bg">10 700+ сотрудников</div>
-        </div>
-
-        <div class="stats-item stats-image">
-          <img src="/images/jpeg/02-expert-lab.jpg" alt="Исследования" />
-          <div class="stats-text blue-bg">570 экспертов R&D</div>
-        </div>
-
-        <div class="stats-item stats-highlight">
-          <div class="highlight-number">167</div>
-          <p>
-            лет опыта <br />
-            на рынке хлебопечения
-          </p>
-        </div>
-
-        <div class="stats-item stats-image">
-          <img src="/images/jpeg/03-company-history.jpg" alt="Россия" />
-          <div class="stats-text brown-bg">25+ лет в России</div>
-        </div>
-
-        <div class="stats-item stats-image">
-          <img src="/images/jpeg/04-branches-worldwide.jpg" alt="Фабрика" />
-          <div class="stats-text brown-bg">Филиалы в 50+ странах</div>
-        </div>
-
-        <div class="stats-item stats-highlight">
-          <div class="highlight-number">4</div>
-          <p>
-            направления <br />
-            деятельности
-          </p>
-        </div>
-      </div>
-      <img
-        src="./images/png/white-patches-company.png"
-        alt="Overlay"
-        class="white-patches-company"
-      />
-    </section>
+      </section>
+    </div>
   </body>
 </html>
